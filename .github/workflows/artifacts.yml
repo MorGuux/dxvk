@@ -18,7 +18,7 @@ jobs:
       uses: Joshua-Ashton/gcc-problem-matcher@v1
       
     - name: Checkout async patch
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
       with:
         repository: 'Sporif/dxvk-async'
 
