@@ -21,9 +21,14 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: 'Sporif/dxvk-async'
+        clean: 'false'
 
     - name: Patch async into DXVK
-      run: git apply dxvk-async/dxvk-async.patch
+      run: |
+        ls
+        pwd
+        ls dxvk-async
+        git apply dxvk-async/dxvk-async.patch
 
     - name: Build release
       id: build-release
